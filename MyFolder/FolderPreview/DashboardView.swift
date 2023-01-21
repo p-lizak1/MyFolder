@@ -137,30 +137,3 @@ struct DashboardView_Previews: PreviewProvider {
         DashboardView(viewModel: DashboardViewModel(user: MockFactory.generateUser()))
     }
 }
-
-import SwiftUI
-import AVKit
-
-struct VideoPlayerView: UIViewControllerRepresentable {
-  let videoUrl: URL
-  
-  func makeUIViewController(context: Context) -> AVPlayerViewController {
-    let controller = AVPlayerViewController()
-    let player = AVPlayer(url: videoUrl)
-    controller.player = player
-    
-    return controller
-  }
-  
-  func updateUIViewController(_ uiViewController: AVPlayerViewController, context: Context) {
-    
-  }
-}
-
-
-
-struct VideoPlayerView_Previews: PreviewProvider {
-  static var previews: some View {
-    VideoPlayerView(videoUrl: URL(string: "https://vod-progressive.akamaized.net/exp=1674145020~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F4047%2F11%2F295238750%2F1123020046.mp4~hmac=42b4a6ca4a7b8ce8b1fcdeb39f14663f7391581f70013ed683f5bc34fa32f625/vimeo-prod-skyfire-std-us/01/4047/11/295238750/1123020046.mp4")!)
-  }
-}

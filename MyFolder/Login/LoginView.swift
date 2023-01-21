@@ -18,7 +18,6 @@ struct LoginView: View {
     // MARK: Internal
 
     @ObservedObject var viewModel: LoginViewModel
-    @State var loginTask: Task<Void, Never>?
 
     var body: some View {
         NavigationStack {
@@ -36,7 +35,7 @@ struct LoginView: View {
                     .shadow(radius: 5.0)
 
                 Button(action: {
-                    loginTask = Task {
+                    Task {
                         await viewModel.loginUser()
                     }
                 }, label: {
@@ -50,7 +49,7 @@ struct LoginView: View {
                 })
 
                 Button(action: {
-                    loginTask = Task {
+                    Task {
                         viewModel.credentials = Credentials(username: "noel", password: "foobar")
                         await viewModel.loginUser()
                     }
@@ -70,9 +69,6 @@ struct LoginView: View {
                 if let user = viewModel.user {
                     DashboardView(viewModel: DashboardViewModel(user: user, networkService: viewModel.networkService))
                 }
-            }
-            .onDisappear {
-                loginTask?.cancel()
             }
         }
     }
