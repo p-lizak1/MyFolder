@@ -200,8 +200,7 @@
 		4DA6BD9A2971E694000660EC /* MyFolder */ = {
 			isa = PBXGroup;
 			children = (
-				4D5BE0F529796CAE00354696 /* Login */,
-				4D2B2A3E2972EA9C00DE3EF1 /* FolderPreview */,
+				4DBBDA1F297E6728005E837A /* Features */,
 				4D4077AE297886DD00EF21BC /* Resources */,
 				4DA6BDA92971F275000660EC /* Shared */,
 				4DA6BD9B2971E694000660EC /* MyFolderApp.swift */,
@@ -258,6 +257,15 @@
 				4DBBDA13297993F5005E837A /* MockFactory.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		4DBBDA1F297E6728005E837A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				4D2B2A3E2972EA9C00DE3EF1 /* FolderPreview */,
+				4D5BE0F529796CAE00354696 /* Login */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

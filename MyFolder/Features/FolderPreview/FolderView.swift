@@ -49,10 +49,10 @@ struct FolderView: View {
 struct FolderView_Previews: PreviewProvider {
     static var previews: some View {
         let items = [
-            Item(id: "id1", isDir: false, name: "File 1", parentID: nil, contentType: "image/jpeg", size: nil, children: nil),
-            Item(id: "id2", isDir: true, name: "Folder 1", parentID: nil, contentType: nil, size: nil, children: nil),
-            Item(id: "id3", isDir: true, name: "Folder 2", parentID: nil, contentType: nil, size: nil, children: nil),
-            Item(id: "id4", isDir: false, name: "File 2", parentID: nil, contentType: "image/jpeg", size: nil, children: nil)
+            MockFactory.generateImageItem(),
+            MockFactory.generateFolderItem(),
+            MockFactory.generateImageItem(),
+            MockFactory.generateFolderItem()
         ]
         FolderView(viewModel: FolderViewModel(items: items, itemClicked: { _ in
             // Mock do nothing
