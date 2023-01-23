@@ -13,9 +13,9 @@
 		4D2B2A422972EAC500DE3EF1 /* FolderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2B2A412972EAC500DE3EF1 /* FolderViewModel.swift */; };
 		4D2B2A442972EAFD00DE3EF1 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D2B2A432972EAFD00DE3EF1 /* ItemView.swift */; };
 		4D4077A52977DF3200EF21BC /* URLRequest+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4077A42977DF3200EF21BC /* URLRequest+Extensions.swift */; };
-		4D4077AB2978823600EF21BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4077AA2978823600EF21BC /* User.swift */; };
 		4D4077AD2978831500EF21BC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4077AC2978831500EF21BC /* Item.swift */; };
 		4D4077B0297886E700EF21BC /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4077AF297886E700EF21BC /* Color.swift */; };
+		4D4EA1FA297E8D86009ECBE5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EA1F9297E8D86009ECBE5 /* User.swift */; };
 		4D52A7712976AE4600B95373 /* ItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D52A7702976AE4600B95373 /* ItemViewModel.swift */; };
 		4D52A7732976B91200B95373 /* ImagePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D52A7722976B91200B95373 /* ImagePreview.swift */; };
 		4D5BE0F429795CF500354696 /* FolderStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5BE0F329795CF500354696 /* FolderStorage.swift */; };
@@ -56,9 +56,9 @@
 		4D2B2A412972EAC500DE3EF1 /* FolderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewModel.swift; sourceTree = "<group>"; };
 		4D2B2A432972EAFD00DE3EF1 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		4D4077A42977DF3200EF21BC /* URLRequest+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extensions.swift"; sourceTree = "<group>"; };
-		4D4077AA2978823600EF21BC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = User.swift; path = ../../../../../../Desktop/User.swift; sourceTree = "<group>"; };
 		4D4077AC2978831500EF21BC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4D4077AF297886E700EF21BC /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		4D4EA1F9297E8D86009ECBE5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4D52A7702976AE4600B95373 /* ItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewModel.swift; sourceTree = "<group>"; };
 		4D52A7722976B91200B95373 /* ImagePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePreview.swift; sourceTree = "<group>"; };
 		4D5BE0F329795CF500354696 /* FolderStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderStorage.swift; sourceTree = "<group>"; };
@@ -145,9 +145,9 @@
 		4D4077A92978822300EF21BC /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4D4077AA2978823600EF21BC /* User.swift */,
 				4D5BE0FC297987FD00354696 /* Credentials.swift */,
 				4D4077AC2978831500EF21BC /* Item.swift */,
+				4D4EA1F9297E8D86009ECBE5 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -402,9 +402,9 @@
 				4D52A7712976AE4600B95373 /* ItemViewModel.swift in Sources */,
 				4D4077AD2978831500EF21BC /* Item.swift in Sources */,
 				4DBBDA182979F497005E837A /* ImagePicker.swift in Sources */,
+				4D4EA1FA297E8D86009ECBE5 /* User.swift in Sources */,
 				4D2B2A3B2972D85E00DE3EF1 /* DashboardView.swift in Sources */,
 				4D4077A52977DF3200EF21BC /* URLRequest+Extensions.swift in Sources */,
-				4D4077AB2978823600EF21BC /* User.swift in Sources */,
 				4DBBDA162979A67C005E837A /* LoadingView.swift in Sources */,
 				4DA6BD9C2971E694000660EC /* MyFolderApp.swift in Sources */,
 				4D52A7732976B91200B95373 /* ImagePreview.swift in Sources */,
