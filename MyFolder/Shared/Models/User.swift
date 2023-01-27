@@ -11,4 +11,3 @@ struct User: Codable {
     let firstName, lastName: String
     var rootItem: Item
 }
-

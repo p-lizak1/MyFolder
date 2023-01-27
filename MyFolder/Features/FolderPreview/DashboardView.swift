@@ -47,7 +47,9 @@ struct DashboardView: View {
         .navigationTitle("Welcome \(viewModel.user.firstName)")
         .navigationBarTitleDisplayMode(.large)
         .navigationBarBackButtonHidden(true)
-        .sheet(item: $viewModel.imageItemToShow) { item in
+        .sheet(item: $viewModel.imageItemToShow, onDismiss: {
+            viewModel.imageItemToShow = nil
+        }) { item in
             ImagePreview(item: item)
         }
 

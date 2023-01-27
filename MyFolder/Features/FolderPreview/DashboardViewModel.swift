@@ -33,8 +33,11 @@ class DashboardViewModel: ObservableObject {
     }
 
     var user: User
+    /// The folder name that is about to be created.
+    /// Set when user hit's confirm creating folder button
     @Published var folderName: String = ""
     @Published var presentCreateDirAlert = false
+    /// Holds the image which is about to be previewed
     /// When the item is set, a modal preview will open up showing the image
     @Published var imageItemToShow: Item?
     @Published var shouldShowPhotoPicker: Bool = false
@@ -42,6 +45,7 @@ class DashboardViewModel: ObservableObject {
     @Published var showActions: Bool = false
     /// Determines if the action buttons, back and add new content, is visible
     @Published var actionMenuIsVisible: Bool = false
+    /// The latest selected image from the photoPicker which should be uploaded
     @Published var selectedImage: UIImage = UIImage()
     @Published private(set) var loadingState: LoadingState = .loaded
 
@@ -103,7 +107,7 @@ class DashboardViewModel: ObservableObject {
     private let networkService: NetworkServicing
 
     private func uploadImageFor(data: Data) async {
-        let imageName = "image_\(Int.random(in: 1 ... 999_999))"
+        let imageName = "image_\(Int.random(in: 1 ... 999_999_999))"
         guard let currentDirParentID = folderToDisplay.parentID else { return }
         let result = await networkService.load(
             resource:
