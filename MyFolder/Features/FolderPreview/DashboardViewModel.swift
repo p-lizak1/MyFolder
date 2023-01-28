@@ -65,7 +65,7 @@ class DashboardViewModel: ObservableObject {
     }
 
     func dirUp() {
-        folderStorage.deleteFolderFor(id: folderToDisplay.parentID)
+        folderStorage.deleteFolderFor(id: folderToDisplay.id)
         changeLoadingStateTo(state: .loading)
         getParentFolderFor(id: folderToDisplay.parentID)
         changeLoadingStateTo(state: .loaded)
@@ -82,6 +82,7 @@ class DashboardViewModel: ObservableObject {
             Resources.Folder.createFolderFor(
                 for: currentDirParentID,
                 folderName: NewFolderRequest(name: folderName)))
+        folderName = ""
         switch result {
         case let .success(createdItem):
             insertItemToCurrentFolder(item: createdItem)
